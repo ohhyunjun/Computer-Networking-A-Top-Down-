@@ -1,0 +1,28 @@
+1. 인터넷 프로토콜(IP)
+   - 특징
+      = 비신뢰성: 패킷을 최선을 다해 목적지 까지 전달하는 Best Effort Service 제공
+      = 비접속형: 사전에 연결을 설정하지 않고 개별 패킷을 전송, 각 패킷은 독립적으로 전달, 경로 변경될 수 있음
+      = 주소 지정: 네트워크 내에서 각 장치를 고유하게 식별하기 위해 IP주소 사용
+      = 경로 결정: 패킷이 목적지에 도달할 수 있도록 라우터가 목적지 IP 주소를 기반으로 경로 결정.
+
+2. IP 주소 전송 방식
+   - 유니캐스트: 1대1 통신
+   - 멀티캐스트: 1대다 통신 (특정 그룹)
+   - 브로드캐스트: 네트위크 내 모든 장치에게 전송
+
+3. IP 주소 관련 프로토콜
+   - ARP(Address Resolution Protocol): 네트워크 내에서 목적지 MAC주소를 모을 때 ARP 요청을 브로드 캐스트로 보내고 응답 받아 MAC 주소 확인
+     [IP주소 -> MAC주소 변환]
+   - RARP: ARP 반대 과정으로 저장 장치가 없는 장치가 IP 주소를 요청할 때
+   - ICMP(Internet Control Message Protocol): 네트워 크 오류 보고 및 상태 점검 프로토콜
+
+4. 멀티캐스팅
+   - 여러 장치에 동시에 데이터를 전송하는 방식
+   - 멀티캐스트 그룹: 특정 그룹에 가입한 호스트들에게만 패킷 전송
+   - IGMP(Internet Group Management Protocol) 사용
+
+6. IP 주소 할당 및 관리
+   - 서브네팅: 하나의 네트워크를 작은 네트워크로 나누어 IP 낭비 줄임
+   - 슈퍼네팅: 여러 개의 네트워크를 하나로 묶어 관리
+   - CIDR(Classless Host Configuration Protocol): A/B/C 클래스 없이 유연한 IP주소 할당 가능
+   - DHCP(Dynamic Host Configuration Protocol): IP주소를 동적으로 할당하는 프로토콜
