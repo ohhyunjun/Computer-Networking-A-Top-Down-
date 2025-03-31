@@ -14,7 +14,7 @@
     - 메시지의 형식, 전송 순서, 전송 시 수행 동작을 정의(예: HTTP 요청-> TCP 연결-> 서버 응답)
 
 3. 네트워크 엣지
-    - Connection-Oriented Service(TCP가 함) 
+    - Connection-Oriented Service(연결 지향 서비스: TCP가 함) 
         = handshaking(사전설정) : 데이터를 보내기 위한 사전 작업으로 수신받을 준비가 되었음을 송신자에게 알림. 이후 하나의 session이 형성(set up)됨. <one connection> -> (TCP 과정/신뢰성있는 전송)
         = 신뢰성 있는 전송, 흐름/혼잡 제어 포함
         = HTTP, FTP, SMTP 등
