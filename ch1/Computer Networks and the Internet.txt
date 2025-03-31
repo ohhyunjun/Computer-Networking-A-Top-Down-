@@ -34,10 +34,35 @@
         = 각 패킷은 전체 링크 대역폭을 사용함, 자원은 필요에 따라 사용됨, store and forward 방식(패킷 전체가 도착후 다음 라우터로 전송/한 hop씩 이동)
         = 자원을 공유, 혼잡 시 지연/ 손실 발생
         = Statistical Multiplexing(통계적 다중화): 정해진 순서 없이 통계적으로 패킷을 가변적으로 전송, 동시 사용자 수 증가해도 대부분 비활성이라 많은 사용자 수용 가능(10명 수용가능하더라도 35명까지 수용함. 10명 이상이 동시에 사용할 확률은 10%라서)
-    - Virtyal Circuit Network : 패킷을 보내기 전에 미리 목적지의 과정을 알고 출발(라우팅 테이블 계속 확인할 필요 없음) -> 패킷 스위칭보다 빠름
-
+        - datagram network: 패킷의 목적지 주소가 다음 hop을 결정 함. 세션과정에서 그때 그때 최적의 경로로 전달 된다.
+        - Virtual Circuit Network : 패킷을 보내기 전에 미리 목적지의 과정을 알고 출발(라우팅 테이블 계속 확인할 필요 없음) -> 패킷 스위칭보다 빠름
+               = 데이터 그램 : 비연결, 패킷마다 독립, 유연성 높음, 신로성 낮음, IP
+               = virtual circuit : 연결형(사전 설정 필요), 이미 정해진 경로, 유연성 낮음, 신뢰성 높음, ATM
 5. Network Access and Physical Media
+    = 
 
+6. Interntet structure and ISPs
+    = 인터넷 구조는 피라미드처럼 계층적임
+    - tier-1 ISP : 글로벌 네트워크 보유(BBN, AT&T)
+    - tier-2 ISP : 지역망, Tier-1과 연결
+    - tier-3 / Loca ISP : 사용자에게 직접 인터넷 제공
+    - NAP : ISP들이 서로 데이터를 주고 받는 중앙 교환 지점.(공동물류센터)
+
+7. Delay & loss in packet-switched networks
+    - 소실과 딜레이의 이유? : 패킷 도착률이 링크 용량을 초과할때, packets queue(패킷 대기열)들이 자신의 차례를 기다리는 시간
+    - nodal processing : 비트오류 체크, 출력 링크 결정 
+    - processing delay(처리 지연) : 라우터가 패킷을 처리
+    - queueing(대기열) : 출력링크로 전송되는 동안 대기하는 곳, 라우터의 복잡도에 따라 다름
+    - transmission delay(전송) : 패킷을 링크로 밀어 넣는 시간( R = 링크 대역폭<bps>, L = 패킷 길이<bits> ==> L/R) [ex: 수도꼭지를 틀 때, 물을 관에 채우는 시간]
+    - propagation delay(전파) : 링크를 따라 비트가 이동하는데 걸리는 시간(d = 물리적 링크의 길이, s = 전파속도 ==> d/s) [ex: 물이 수도관을 따라 흘러가는 시간]
+               = processing, queueing, transmission, propagation 순임. nodal은 모두 더한것.
+
+8. 프로토콜 계층 구조
+    - application(어플리케이션): 네트워크 어플리케이션을 도움 (FTP, SMTP, STTP) <message>
+    - transport(전송): 호스트와 호스트간의 데이터를 전송(TCP, UDP) <segment>
+    - network(네트워크): 목적지 <packit, datagram>
+    - link(데이터 링크):  <frame>
+    - physical(물리):  <bit>
 
 
 
