@@ -60,9 +60,9 @@
 8. 프로토콜 계층 구조
     - application(어플리케이션): 네트워크 어플리케이션을 도움 (FTP, SMTP, STTP) <message>
     - transport(전송): 호스트와 호스트간의 데이터를 전송(TCP, UDP) <segment>
-    - network(네트워크): 목적지 <packit, datagram>
-    - link(데이터 링크):  <frame>
-    - physical(물리):  <bit>
+    - network(네트워크): 송신에서 수신측으로 데이터크램을 라우팅함. <packit, datagram>
+    - link(데이터 링크): 인접 네트워크간 데이터를 전송함<frame>
+    - physical(물리): 데이터를 실제 물리적으로 전송함<bit>
 
 
 
