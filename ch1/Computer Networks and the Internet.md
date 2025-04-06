@@ -81,12 +81,12 @@
   - 출력 링크로 전송되는 동안 대기하는 곳, 라우터의 복잡도에 따라 다름
 - **Transmission Delay (전송)**:
   - 네트워크 장치(예: 라우터 또는 스위치)가 네트워크 링크를 통해 데이터 패킷의 전체 비트를 보내는 데 걸리는 시간, 즉 데이터를 링크로 밀어넣는 시간을 말함.
-  - \( R = \text{링크 대역폭 (bps)}, L = \text{패킷 길이 (bits)} \)
-  - \( \text{Transmission Delay} = L/R \)
+  - ( R = 링크 대역폭 (bps), L = 패킷 길이 (bits))
+  - (Transmission Delay = L/R )
 - **Propagation Delay (전파)**:
   - 데이터 패킷이 한 노드에서 다음 노드로 물리적 링크를 통해 이동하는 데 걸리는 시간, 즉 신호가 링크를 통해 이동하는 데 걸리는 시간을 말함.
-  - \( d = \text{물리적 링크의 길이}, s = \text{전파 속도} \)
-  - \( \text{Propagation Delay} = d/s \)
+  - (d = 물리적 링크의 길이, s = 전파 속도)
+  - (Propagation Delay = d/s)
 - **순서**:
   - Processing → Queueing → Transmission → Propagation
   - **Nodal Delay**: 위의 모든 지연을 더한 것
