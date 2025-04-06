@@ -44,6 +44,7 @@
 - **체크섬**: 세그먼트에서 에러 '감지'를 목표.
 - ![Image](https://github.com/user-attachments/assets/da30c4f6-b229-42f4-89b4-57cf668893b2)
 
+
 ## 4. Principles of Reliable Data Transfer
 - **방식**:
   - Stop and Wait
