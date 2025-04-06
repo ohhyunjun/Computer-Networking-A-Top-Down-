@@ -57,14 +57,15 @@
     - **링크 용량**: `1Gbps` (1,000,000,000 bits per second)
     - **패킷 크기**: `1KB` (1 kilobyte = 8000 bits)
     - **전파 지연 (End-to-End Propagation Delay)**: `15ms` (15 milliseconds)
-    - **패킷 전송 시간 (Transmission Time)**: 패킷 길이를 링크 용량으로 나눈 값
+    - **패킷 전송 시간 (Transmission Time)**: 패킷 길이를 링크 용량으로 나눈 값 = 패킷 전송시간 = L/R
       - 계산: `8000 bits / 10^9 bits/sec = 8 microseconds`
 
-### 활용도 계산 공식
+    ### 활용도 계산 공식
 
-```plaintext
-U_sender = L / (R * (RTT + (L / R)))
-```
+    ```plaintext
+    U_sender(송신자가 데이터를 전송하는데 사용하는 시간의 비율) = (L / R) / (RTT + (L / R))
+                                                              = 0.008/(15ms*2+0.008) = 0.00027
+    ```
   - **결론**:  
       이론적 최대 대역폭은 1Gbps에 달하지만, 주어진 네트워크 조건(전파 지연 및 패킷 크기 등)에서는 실제로 초당 약 33KB의 데이터만을 전송할 수 있습니다.
 - **GBN**:
