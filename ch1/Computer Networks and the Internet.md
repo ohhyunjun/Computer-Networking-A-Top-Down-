@@ -68,6 +68,7 @@
   - 사용자에게 직접 인터넷 제공
 - **NAP**:
   - ISP들이 서로 데이터를 주고받는 중앙 교환 지점 (공동물류센터)
+![Image](https://github.com/user-attachments/assets/c143bded-a099-4dfa-8b07-e262c24a919d)
 
 ## 7. Delay & Loss in Packet-Switched Networks
 - **소실과 딜레이의 이유**:
