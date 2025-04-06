@@ -50,7 +50,8 @@
   - Stop and Wait
   - Sliding Window (Pipeline, Go Back N, Selective Repeat)
 - **rdt3.0**: Stop and Wait 방식으로 보내고 ACK가 일정 시간 동안 오지 않으면 다시 보낸다.
-  *(사진 2개)*
+  ![Image](https://github.com/user-attachments/assets/9b2286f8-b8fa-4a13-878b-b908450421e7)
+  
   ### 네트워크 성능 계산
 
     #### 기본 조건
