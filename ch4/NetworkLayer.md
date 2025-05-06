@@ -20,8 +20,8 @@
     - `p(v)`: 노드 `v`까지의 경로에서 이전 노드.
     - `N`: 경로에 포함된 노드 집합.
     - <ex>
-       ![Image](https://github.com/user-attachments/assets/40b309e4-24df-4b0a-94ea-1289f6a9dccc)
-       ![Image](https://github.com/user-attachments/assets/ee2e0deb-b828-4cbc-8300-b4db87b2c95b)
+     ![Image](https://github.com/user-attachments/assets/40b309e4-24df-4b0a-94ea-1289f6a9dccc)
+     ![Image](https://github.com/user-attachments/assets/ee2e0deb-b828-4cbc-8300-b4db87b2c95b)
      
 - **Decentralized (Distance Vector Routing)**:
   - 라우터는 이웃 노드와만 링크 비용 정보를 교환합니다.
