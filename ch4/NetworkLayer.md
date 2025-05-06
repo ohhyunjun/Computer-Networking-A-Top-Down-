@@ -30,8 +30,8 @@
   - 공식: `D^x(Y, Z) = c(x, Y) + min_w{D^Z(Y, w)}`
     - `D^x(Y, Z)`: 노드 `x`에서 `Y`까지, `Z`를 거치는 비용.
   - <ex>
-     ![Image](https://github.com/user-attachments/assets/384e8af7-92c1-4f3c-b3df-82a679dfd8f2)
-     ![Image](https://github.com/user-attachments/assets/1fc516ac-6ddc-4b48-9916-c1adea6863d5)
+   ![Image](https://github.com/user-attachments/assets/384e8af7-92c1-4f3c-b3df-82a679dfd8f2)
+   ![Image](https://github.com/user-attachments/assets/1fc516ac-6ddc-4b48-9916-c1adea6863d5)
 
 #### (2) 변화 적응 방식
 - **Static**: 라우팅 경로가 시간에 따라 느리게 변화합니다.
