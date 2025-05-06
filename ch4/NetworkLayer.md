@@ -19,12 +19,19 @@
     - `D(v)`: 출발지에서 노드 `v`까지의 총 비용.
     - `p(v)`: 노드 `v`까지의 경로에서 이전 노드.
     - `N`: 경로에 포함된 노드 집합.
+    - <ex>
+       ![Image](https://github.com/user-attachments/assets/40b309e4-24df-4b0a-94ea-1289f6a9dccc)
+       ![Image](https://github.com/user-attachments/assets/ee2e0deb-b828-4cbc-8300-b4db87b2c95b)
+     
 - **Decentralized (Distance Vector Routing)**:
   - 라우터는 이웃 노드와만 링크 비용 정보를 교환합니다.
   - 사전 작업 없이 정보 교환을 반복하며 최소 비용 경로를 계산합니다.
   - 특징: **분산적**, **반복적**, **비동기적**.
   - 공식: `D^x(Y, Z) = c(x, Y) + min_w{D^Z(Y, w)}`
     - `D^x(Y, Z)`: 노드 `x`에서 `Y`까지, `Z`를 거치는 비용.
+  - <ex>
+     ![Image](https://github.com/user-attachments/assets/384e8af7-92c1-4f3c-b3df-82a679dfd8f2)
+     ![Image](https://github.com/user-attachments/assets/1fc516ac-6ddc-4b48-9916-c1adea6863d5)
 
 #### (2) 변화 적응 방식
 - **Static**: 라우팅 경로가 시간에 따라 느리게 변화합니다.
@@ -88,6 +95,9 @@
   - **기본 헤더**: 40바이트, 송수신 주소 및 전송 정보.
   - **확장 헤더**: 추가 기능 필요 시 선택적 추가.
   - **데이터 필드**: TCP 세그먼트, UDP 데이터그램 등.
+  - <비교>
+    ![Image](https://github.com/user-attachments/assets/7501ecfe-83ca-41fc-85f0-7d3222844dae)
+    
 - **주소 종류**:
   - **유니캐스트**: 단일 인터페이스 식별.
   - **멀티캐스트**: 인터페이스 그룹 식별, 그룹 내 모든 인터페이스에 전달.
