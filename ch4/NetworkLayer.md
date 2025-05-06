@@ -108,6 +108,8 @@
 
 ### 3.2 모바일 IPv4
 - **동작**:
+  -![Image](https://github.com/user-attachments/assets/9d2a19bc-4eec-478b-ae79-9b3b626dd4ce) 
+  -![Image](https://github.com/user-attachments/assets/b0c94f0d-822c-4490-80e9-70a5355982b8) 
   - CN은 MN의 임시 위치를 모르므로 패킷을 HA로 전송.
   - HA는 맵핑된 CoA로 패킷을 전달.
   - MN은 CN에 직접 패킷을 전송.
