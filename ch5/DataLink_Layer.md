@@ -105,7 +105,10 @@ EDC는 데이터 전송의 신뢰성을 높이기 위해 사용되는 비트입�
   - **CSMA (Carrier Sense Multiple Access)**:
     - 전송 전 채널 확인 후 유휴 시 전송.
     - **CSMA/CD (Collision Detection)**: 충돌 감지 시 중단 후 재전송 (유선).
+      - ex) CSMA/CD에서 5번의 충돌 후에 노드가 K=4를 선택할 확률은?, K=4는 10Mbps 이더넷에서 몇 초의 지연시간에 해당하는가?
+        - : 5번의 충돌 -> 2^5=32(0~31까지) 즉 확률은 1/32, 지연시간의 경우 4*512*0.1*10^-6(bit time)/10*10^6(bps)
     - **CSMA/CA (Collision Avoidance)**: RTS/CTS로 충돌 방지 (무선).
+      - = 
 
 ---
 
